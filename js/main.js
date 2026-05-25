@@ -19,7 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Scroll Effect
   const handleNavScroll = () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (document.querySelector('.hero')) {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    } else {
+      navbar.classList.add('scrolled');
+    }
   };
   window.addEventListener('scroll', handleNavScroll);
   handleNavScroll();
