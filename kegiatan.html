@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Daftar Kegiatan | AKG Indonesia - Ashabul Kahfi Generation</title>
+    <meta name="description" content="Daftar Kegiatan Ashabul Kahfi Generation (AKG) - Ikuti workshop persiapan dokumen beasiswa, seminar studi Timur Tengah, dan pre-departure camp intensif kami di Madiun." />
+    <meta name="keywords" content="kegiatan santri, agenda beasiswa, camp keberangkatan mesir, bimbingan bahasa arab, seminar luar negeri, ashabul kahfi" />
+    <meta name="author" content="AKG Indonesia" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://akgindonesia.co.id/kegiatan.html" />
+
+    <!-- Open Graph / Facebook / WhatsApp (Untuk WA Preview Bergambar) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akgindonesia.co.id/kegiatan.html" />
+    <meta property="og:title" content="Daftar Kegiatan | AKG Indonesia - Ashabul Kahfi Generation" />
+    <meta property="og:description" content="Ikuti berbagai workshop persiapan beasiswa, seminar internasional, dan camp intensif di Madiun bersama AKG Indonesia." />
+    <meta property="og:image" content="https://akgindonesia.co.id/assets/img/logo-akg.png" />
+    <meta property="og:image:secure_url" content="https://akgindonesia.co.id/assets/img/logo-akg.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:site_name" content="AKG Indonesia" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://akgindonesia.co.id/kegiatan.html" />
+    <meta name="twitter:title" content="Daftar Kegiatan | AKG Indonesia" />
+    <meta name="twitter:description" content="Ikuti berbagai workshop persiapan beasiswa, seminar internasional, dan camp intensif di Madiun bersama AKG Indonesia." />
+    <meta name="twitter:image" content="https://akgindonesia.co.id/assets/img/logo-akg.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ============ PAGE LOADER ============ -->
+    <div class="page-loader">
+      <img src="assets/img/logo-akg.png" alt="AKG Logo" class="loader-logo" />
+      <div class="loader-bar"></div>
+    </div>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar scrolled" id="navbar">
+      <div class="container">
+        <a href="index.html#beranda" class="navbar-logo" id="nav-logo">
+          <img src="assets/img/logo-akg.png" alt="AKG Indonesia Logo" />
+        </a>
+
+        <div class="navbar-menu" id="nav-menu">
+          <a href="index.html#beranda">Beranda</a>
+          <a href="about.html">Tentang AKG</a>
+          <a href="index.html#program">Program</a>
+          <a href="index.html#beasiswa">Beasiswa</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="kegiatan.html" class="active">Kegiatan</a>
+          <a href="artikel.html">Artikel</a>
+          <a href="index.html#kontak">Kontak</a>
+          <a href="index.html#daftar" class="btn btn-primary navbar-cta">Daftar Sekarang <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <button
+          class="navbar-toggle"
+          id="nav-toggle"
+          aria-label="Toggle Navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============ SUBPAGE HERO ============ -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="subpage-breadcrumbs">
+          <a href="index.html#beranda">Beranda</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Kegiatan</span>
+        </div>
+        <h1 class="subpage-title">DAFTAR KEGIATAN</h1>
+      </div>
+    </section>
+
+    <!-- ============ KEGIATAN CONTENT ============ -->
+    <section class="subpage-content">
+      <div class="container">
+        <!-- Control Panel -->
+        <div class="page-controls">
+          <div class="filter-tabs" id="kegiatanFilters">
+            <button class="filter-tab active" data-filter="all">Semua</button>
+            <button class="filter-tab" data-filter="Workshop">Workshop</button>
+            <button class="filter-tab" data-filter="Seminar">Seminar</button>
+            <button class="filter-tab" data-filter="Camp">Camp</button>
+          </div>
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="kegiatanSearch" placeholder="Cari kegiatan..." />
+          </div>
+        </div>
+
+        <!-- Grid Kartu Kegiatan -->
+        <div class="kegiatan-cards" id="kegiatanGrid" style="grid-template-columns: repeat(3, 1fr);">
+          <!-- Kegiatan 1 -->
+          <a href="kegiatan-detail.html?id=workshop-persiapan" class="kegiatan-card reveal" data-category="Workshop">
+            <div class="kegiatan-img">
+              <img src="assets/img/galeri-seminar.png" alt="Workshop Persiapan Beasiswa">
+            </div>
+            <div class="kegiatan-body">
+              <div class="kegiatan-date"><i class="fas fa-calendar-alt"></i> 15 Juli 2027</div>
+              <h4>Workshop Persiapan Beasiswa</h4>
+              <p>Pelatihan intensif persiapan dokumen dan interview untuk calon penerima beasiswa Al Azhar Cairo.</p>
+              <span class="kegiatan-tag">Workshop</span>
+            </div>
+          </a>
+
+          <!-- Kegiatan 2 -->
+          <a href="kegiatan-detail.html?id=seminar-timur-tengah" class="kegiatan-card reveal" data-category="Seminar">
+            <div class="kegiatan-img">
+              <img src="assets/img/galeri-mentoring.png" alt="Seminar Studi Timur Tengah">
+            </div>
+            <div class="kegiatan-body">
+              <div class="kegiatan-date"><i class="fas fa-calendar-alt"></i> 22 Juli 2027</div>
+              <h4>Seminar Studi Timur Tengah</h4>
+              <p>Pemaparan lengkap mengenai sistem pendidikan, budaya, dan peluang karir di kawasan Timur Tengah.</p>
+              <span class="kegiatan-tag">Seminar</span>
+            </div>
+          </a>
+
+          <!-- Kegiatan 3 -->
+          <a href="kegiatan-detail.html?id=pre-departure-camp" class="kegiatan-card reveal" data-category="Camp">
+            <div class="kegiatan-img">
+              <img src="assets/img/villa-elewana.png" alt="Pre-Departure Camp">
+            </div>
+            <div class="kegiatan-body">
+              <div class="kegiatan-date"><i class="fas fa-calendar-alt"></i> 5 Agustus 2027</div>
+              <h4>Pre-Departure Camp</h4>
+              <p>Program pembekalan akhir bagi peserta yang akan berangkat ke Al Azhar Cairo di Villa Elewana, Madiun.</p>
+              <span class="kegiatan-tag">Camp</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="assets/img/logo-akg.png" alt="AKG Logo" />
+              <span>ASHABUL KAHFI GENERATION</span>
+            </div>
+            <p>Membangun generasi Rabbani, berilmu, berkarya, dan bermanfaat untuk umat.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Tautan Cepat</h4>
+            <ul>
+              <li><a href="index.html#beranda">Beranda</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="index.html#program">Program</a></li>
+              <li><a href="index.html#beasiswa">Beasiswa</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Program</h4>
+            <ul>
+              <li><a href="index.html#beasiswa">Beasiswa Al Azhar</a></li>
+              <li><a href="index.html#program">Partnership Executive</a></li>
+              <li><a href="index.html#program">Pengembangan Diri</a></li>
+              <li><a href="index.html#program">Study Luar Negeri</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Kontak Kami</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Villa Elewana, Jl. Raya Saradan No.10, Madiun, Jawa Timur</p>
+            <p><i class="fas fa-envelope"></i> info@akgindonesia.co.id</p>
+            <p><i class="fas fa-globe"></i> akgindonesia.co.id</p>
+          </div>
+        </div>
+        <div class="footer-bottom" style="border-top: 1px solid var(--white-10); padding-top: 20px; display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--silver-600);">
+          <p>&copy; 2027 AKG Indonesia. All Rights Reserved.</p>
+          <p>Membangun Generasi Rabbani.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- Kegiatan List Filter Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.getElementById('kegiatanSearch');
+        const filters = document.getElementById('kegiatanFilters');
+        const cards = document.querySelectorAll('.kegiatan-card');
+
+        const filterKegiatan = () => {
+          const query = searchInput.value.toLowerCase();
+          const activeTab = filters.querySelector('.filter-tab.active').getAttribute('data-filter');
+
+          cards.forEach(card => {
+            const title = card.querySelector('h4').textContent.toLowerCase();
+            const desc = card.querySelector('p').textContent.toLowerCase();
+            const category = card.getAttribute('data-category');
+
+            const matchesQuery = title.includes(query) || desc.includes(query);
+            const matchesCategory = activeTab === 'all' || category === activeTab;
+
+            if (matchesQuery && matchesCategory) {
+              card.style.display = 'flex';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(20px)';
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 300);
+            }
+          });
+        };
+
+        if (searchInput) {
+          searchInput.addEventListener('input', filterKegiatan);
+        }
+
+        if (filters) {
+          filters.addEventListener('click', (e) => {
+            if (e.target.classList.contains('filter-tab')) {
+              filters.querySelectorAll('.filter-tab').forEach(btn => btn.classList.remove('active'));
+              e.target.classList.add('active');
+              filterKegiatan();
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
