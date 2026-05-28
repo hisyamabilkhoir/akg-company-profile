@@ -567,6 +567,18 @@ img {
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(212, 175, 55, 0.15);
   border-bottom: 1px solid rgba(212, 175, 55, 0.12);
 }
+.scroll-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--silver-300) 0%, var(--white) 50%, var(--silver-300) 100%);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(192, 195, 204, 0.5);
+  z-index: 1001;
+  transition: width 0.05s ease-out;
+  pointer-events: none;
+}
 .navbar .container {
   display: flex;
   align-items: center;

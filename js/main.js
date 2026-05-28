@@ -31,6 +31,23 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleNavScroll);
   handleNavScroll();
 
+  // Scroll Progress Bar
+  if (navbar) {
+    const progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress-bar';
+    navbar.appendChild(progressBar);
+
+    const updateProgressBar = () => {
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      progressBar.style.width = scrolled + '%';
+    };
+
+    window.addEventListener('scroll', updateProgressBar);
+    updateProgressBar();
+  }
+
   // Mobile Menu Toggle
   navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
