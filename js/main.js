@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     setTimeout(() => {
       loader.classList.add('hidden');
+      if (typeof revealOnLoad === 'function') {
+        revealOnLoad();
+      }
     }, 800);
   });
 
@@ -96,6 +99,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ==================== SCROLL REVEAL ==================== */
   const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  
+  const revealOnLoad = () => {
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      // If the element's top is within the viewport on load
+      if (rect.top < window.innerHeight) {
+        const parent = el.closest('[data-stagger]');
+        if (parent) {
+          const siblings = Array.from(parent.querySelectorAll('.reveal, .reveal-left, .reveal-right'));
+          const idx = siblings.indexOf(el);
+          setTimeout(() => {
+            el.classList.add('active');
+          }, idx * 100);
+        } else {
+          el.classList.add('active');
+        }
+      }
+    });
+  };
+
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
